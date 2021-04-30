@@ -4,76 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ressources/css/style.css">
   <title>Curriculum Vitae</title>
 <body>
-  <header>
-    <img src="ressources/img/IMG_4559.jpeg" />
-    <h1>Anna Dominguez</h1>
-    <p>Développeuse web</p>
-    <h2>Infos</h2>
-    <p>Développeuse web polyvalente, spécialisée FullStackJS</p>
-    <h2>Contact</h2>
-    <p>Tél: 07.77.70.97.98</p>
-    <p>95 rue Jean Jaurès, 92800 Puteaux</p>
-    <p><a href="mailto:ann4.dominguez@gmail.com">ann4.dominguez@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/adomingu/">linkedin.com/adomingu</a></p>
-    <p><a href="https://github.com/Vesta-nna">github.com/Vesta-nna</a></p>
-  </header>
-  <main>
-    <article>
+  <div class="column-1"></div>
+    <header>
+      <img class="profile" src="ressources/img/IMG_4559.jpeg" alt="" />
+      <h1>Anna Dominguez</h1>
+      <div class="info">
+        <h2>Infos</h2>
+        <p>Développeuse web polyvalente, spécialisée FullStackJS</p>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Tél: 07.77.70.97.98</p>
+        <p>95 rue Jean Jaurès, 92800 Puteaux</p>
+        <p><a href="mailto:ann4.dominguez@gmail.com">ann4.dominguez@gmail.com</a></p>
+        <div class="social">
+          <p><a href="https://www.linkedin.com/in/adomingu/"><img src="./ressources/icon/linkedin-brands.svg" alt="" /></a></p>
+          <p><a href="https://github.com/Vesta-nna"><img src="./ressources/icon/github-brands.svg" alt="" /></a></p>
+          <p><a href="https://www.hackerrank.com/ann4_dominguez"><img src="./ressources/icon/hackerrank-brands.svg" alt=""></a></p>
+        </div>
+        <p><a href="https://www.codewars.com/users/Vesta-nna"><img  class="badge" src="https://www.codewars.com/users/Vesta-nna/badges/small" alt=""></a></p>
+      </div>
+    </header>
+  </div>
+  <div class="column-2"></div>
+  <main class="column-3">
+    <section>
       <h2>Qui suis-je?</h2>
       <p>Curieuse et ayant le sens du contact,
         de la communication et une capacité d’adaptation rapide
         aux nouvelles technologies et langages informatiques,
         je souhaite partager et faire évoluer mes connaissances
         avec une équipe à travers un nouveau challenge.</p>
-    </article>
-    <article>
+    </section>
+    <section>
       <h2>Expérience professionnelle</h2>
-      <div>
-        <h3>IT/SI/Pédagogie</h3>
-        <h4>42 Madrid</h4>
+      <article>
+        <a class="title" href="">
+          <h3>IT/SI/Pédagogie</h3>
+          <h4>42 Madrid</h4>
+        </a>
         <p>Lancement du campus 42 à Madrid, gestion d’un parc informatique,
           mise en place de l’infrastructure et de plateformes internes.
-          Automatisation de tâches, de récupération et traite- ment de données.
+          Automatisation de tâches, de récupération et traitement de données.
           Accompagnement pédagogique de plus de 300 étudiants.</p>
-        <h5>Ruby</h5>
-        <h5>React.js</h5>
-        <h5>Python</h5>
-        <h5>PostgreSQL</h5>
-      </div>
-      <div>
-        <h3>FullStackJS</h3>
-        <h4>Gofer</h4>
+        <div class="stack">
+          <h6>Ruby</h6>
+          <h6>React.js</h6>
+          <h6>Python</h6>
+          <h6>PostgreSQL</h6>
+        </div>
+      </article>
+      <article>
+        <a class="title" href="">
+          <h3>FullStackJS</h3>
+          <h4>Gofer</h4>
+        </a>
         <p>Test Driven Developpment, travail sur différentes API dont un CRM,
           approche agile, gestion du flux tendu par rapport à une activité croissante.</p>
-        <h5>node.js</h5>
-        <h5>React.js</h5>
-        <h5>MongoDB</h5>
-        <h5>GraphQL</h5>
-      </div>
-      <div>
-        <h3>Stagiaire photo</h3>
-        <h4>Thibault de Puyfontaine</h4>
+        <div class="stack">
+          <h6>node.js</h6>
+          <h6>React.js</h6>
+          <h6>MongoDB</h6>
+          <h6>GraphQL</h6>
+        </div>
+      </article>
+      <article>
+        <a class="title" href="">
+          <h3>Stagiaire photo</h3>
+          <h4>Thibault de Puyfontaine</h4>
+        </a>
         <p>Stage dans un studio photographie: organisation d’expositions, livraison de commandes.</p>
-      </div>
-    </article>
-    <article>
+      </article>
+    </section>
+    <section>
       <h2>Formation</h2>
-      <div>
-        <h3>42 Paris</h3>
+      <article>
+        <a href="https://www.42.fr/"><h3>42 Paris</h3></a>
         <p>Architecte en technologies du numérique</p>
-      </div>
-      <div>
-        <h3>Université Paris Nanterre</h3>
+      </article>
+      <article>
+        <a href="https://www.parisnanterre.fr/portail-institutionnel-693762.kjsp"><h3>Université Paris Nanterre</h3></a>
         <p>L1 de droit</p>
-      </div>
-      <div>
-        <h3>Lycée Paul Langevin</h3>
+      </article>
+      <article>
+        <a href="http://www.lyc-langevin-suresnes.ac-versailles.fr/"><h3>Lycée Paul Langevin</h3></a>
         <p>BAC L, option musique et anglais renforcé, LV1 espagnol et anglais</p>
-      </div>
-    </article>
-    <article>
+      </article>
+    </section>
+    <section>
       <h2>Compétences</h2>
       <ul>
         <li>Javascript/node.js/React.js</li>
@@ -85,7 +106,7 @@
         <li>Unit Testing</li>
         <li>Shell</li>
       </ul>
-    </article>
+    </section>
   </main>
 </body>
 </html>

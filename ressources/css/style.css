@@ -119,8 +119,13 @@ header .profile {
   justify-content: space-around;
 }
 
-p img {
-  width: 2em;
+.fa-external-link-alt {
+  color: white;
+  padding: 0 1em;
+}
+
+.social i {
+  font-size: 2em;
 }
 
 .badge {

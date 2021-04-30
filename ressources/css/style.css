@@ -159,6 +159,14 @@ article {
   justify-content: space-between;
 }
 
+header a:hover {
+  color: #263ea0;
+}
+
+main a:hover {
+  color: #b2f1e8;
+}
+
 @media screen and (max-width: 800px)
 {
   body {

@@ -88,6 +88,10 @@ ul {
   background-color: #138585;
 }
 
+p {
+  text-align: justify;
+}
+
 /* HEADER */
 header {
   background-color: white;

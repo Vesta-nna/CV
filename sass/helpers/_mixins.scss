@@ -1,0 +1,28 @@
+@mixin transform-style($style){
+  transform-style: $style;
+ -moz-transform-style: $style;
+ -o-transform-style: $style;
+ -ms-transform-style: $style;
+ -webkit-transform-style: $style;
+}
+
+@mixin transition($time){
+ transition: $time;
+ -webkit-transition: $time;
+ -moz-transition: $time;
+ -o-transition: $time;
+}
+
+@mixin transform-style($style){
+  transform-style: $style;
+ -moz-transform-style: $style;
+ -o-transform-style: $style;
+ -ms-transform-style: $style;
+ -webkit-transform-style: $style;
+}
+
+@mixin low-mobile {
+  @media only screen and (max-width: map-get($breakpoints, low-mobile)) {
+    @content;
+  }
+}

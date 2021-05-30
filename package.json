@@ -1,0 +1,20 @@
+{
+  "name": "annadominguez_3_07052021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vesta-nna/AnnaDominguez_3_07052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vesta-nna/AnnaDominguez_3_07052021/issues"
+  },
+  "homepage": "https://github.com/Vesta-nna/AnnaDominguez_3_07052021#readme"
+}

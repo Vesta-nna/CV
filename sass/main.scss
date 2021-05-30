@@ -1,3 +1,10 @@
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "helpers/_keyframes.scss";
+
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/regular.scss";
 
 /* IMPORT FONT FAMILY MONTSERRAT AND ABRIL FATFACE */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -41,6 +48,7 @@ body {
   grid-template-areas: "column-1 column-2 main";
 }
 
+
 h1, h2, h3, h4, h5 {
   font-family: Roboto;
   text-transform: uppercase;
@@ -54,11 +62,7 @@ h2 {
   padding: 0.5em 0 0.25em 0;
 }
 
-h3 {
-  padding-bottom: 0.25em;
-}
-
-h4 {
+h3, h4 {
   padding-bottom: 0.25em;
 }
 
@@ -67,6 +71,7 @@ h6 {
   font-family: "Cutive Mono";
   text-transform: uppercase;
   padding: 1em 0;
+  font-size: 0.9em;
 }
 
 a {
@@ -87,15 +92,18 @@ ul {
   background-color: #138585;
 }
 
+p {
+  text-align: justify;
+}
+
 /* HEADER */
 header {
+  position: fixed;
   background-color: white;
   height: fit-content;
-  width: 100%;
+  width: 30%;
   padding: 2em;
-  margin: 50%;
-  display: grid;
-  gap: 1em;
+  margin: 5% -20%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -138,11 +146,29 @@ main {
   background-color: #138585;
   padding: 3em 5em 3em 0;
   color: white;
+  animation: opacity 2s ease-in-out both;
 }
 
 .stack {
   display: flex;
   justify-content: space-between;
+  animation: stack 1.5s 3s both;
+}
+
+.one {
+  animation: slide-in 1s both;
+}
+.two {
+  animation: slide-in 1s 1.5s both;
+}
+.three {
+  animation: slide-in 1s 3s both;
+}
+.four {
+  animation: slide-in 1s 4s both;
+}
+.five {
+  animation: slide-in 1s 4.5s both;
 }
 
 section {
@@ -153,7 +179,65 @@ article {
   padding: 0.5em 0;
 }
 
+.logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  a:hover {
+    img {
+      opacity: 0.6;
+    }
+  }
+  img {
+    height: 100px;
+  }
+}
+
 .title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+header a:hover {
+  color: #043838;
+}
+
+main a:hover {
+  color: #ffc157;
+}
+
+@media screen and (max-width: 800px)
+{
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    z-index: 5
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    display: grid;
+    gap: 1em;
+  }
+
+  main {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .column-2 {
+    display: none;
+  }
 }

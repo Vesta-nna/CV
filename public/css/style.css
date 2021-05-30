@@ -21,28 +21,6 @@
     opacity: 1;
   }
 }
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes heart {
-  90% {
-    clip-path: circle(85% at 50% 100%);
-  }
-  100% {
-    clip-path: initial;
-  }
-}
-@keyframes empty-heart {
-  100% {
-    opacity: 0;
-  }
-}
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6324,11 +6302,13 @@ article {
   flex-wrap: wrap;
   gap: 2em;
 }
-.logo a:hover img {
-  opacity: 0.6;
-}
 .logo img {
   height: 100px;
+  transition: all 1s ease-in-out;
+}
+.logo a:hover img {
+  opacity: 0.6;
+  transform: scale(0.8);
 }
 
 .title {

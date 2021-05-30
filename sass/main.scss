@@ -184,13 +184,15 @@ article {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
+  img {
+    height: 100px;
+    transition: all 1s ease-in-out;
+  }
   a:hover {
     img {
       opacity: 0.6;
+      transform: scale(0.8);
     }
-  }
-  img {
-    height: 100px;
   }
 }
 

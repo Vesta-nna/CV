@@ -19,28 +19,3 @@
     opacity: 1;
   }
 }
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes heart {
-  90% {
-    clip-path: circle(85% at 50% 100%);
-  }
-  100% {
-    clip-path: initial;
-  }
-}
-
-@keyframes empty-heart {
-  100% {
-    opacity: 0;
-  }
-}

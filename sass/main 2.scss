@@ -1,0 +1,243 @@
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+@import "helpers/_keyframes.scss";
+
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/regular.scss";
+
+/* IMPORT FONT FAMILY MONTSERRAT AND ABRIL FATFACE */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* GLOBAL */
+
+body {
+  font-family: Lato;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-areas: "column-1 column-2 main";
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+
+h1 {
+  padding: 0.7em 0 0.2em 0;
+}
+
+h2 {
+  padding: 0.5em 0 0.25em 0;
+}
+
+h3, h4 {
+  padding-bottom: 0.25em;
+}
+
+h6 {
+  gap: 0.1em;
+  font-family: "Cutive Mono";
+  text-transform: uppercase;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.column-1 {
+  grid-area: column-1;
+}
+
+.column-1 {
+  grid-area: column-2;
+  background-color: #138585;
+}
+
+p {
+  text-align: justify;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  background-color: white;
+  height: fit-content;
+  width: 30%;
+  padding: 2em;
+  margin: 5% -20%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+header p {
+  padding: 0.2em 0;
+}
+
+header .profile {
+  object-fit: cover;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.social {
+  padding: 1.5em 0 1em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-external-link-alt {
+  color: white;
+  padding: 0 1em;
+}
+
+.social i {
+  font-size: 2em;
+}
+
+.badge {
+  width: 100%;
+}
+
+/* MAIN */
+main {
+  grid-area: main;
+  background-color: #138585;
+  padding: 3em 5em 3em 0;
+  color: white;
+  animation: opacity 2s ease-in-out both;
+}
+
+.stack {
+  display: flex;
+  justify-content: space-between;
+  animation: stack 1.5s 3s both;
+}
+
+.one {
+  animation: slide-in 1s both;
+}
+.two {
+  animation: slide-in 1s 1.5s both;
+}
+.three {
+  animation: slide-in 1s 3s both;
+}
+.four {
+  animation: slide-in 1s 4s both;
+}
+.five {
+  animation: slide-in 1s 4.5s both;
+}
+
+section {
+  padding: 1em 0;
+}
+
+article {
+  padding: 0.5em 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  a:hover {
+    img {
+      opacity: 0.6;
+    }
+  }
+  img {
+    height: 100px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header a:hover {
+  color: #043838;
+}
+
+main a:hover {
+  color: #ffc157;
+}
+
+@media screen and (max-width: 800px)
+{
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-1 {
+    z-index: 5
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    display: grid;
+    gap: 1em;
+  }
+
+  main {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .column-2 {
+    display: none;
+  }
+}

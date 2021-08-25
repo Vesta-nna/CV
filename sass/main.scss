@@ -181,11 +181,13 @@ article {
 
 .logo {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  // align-items: center;
   flex-wrap: wrap;
   gap: 2em;
   img {
     height: 100px;
+    flex: 0 1 0;
     transition: all 1s ease-in-out;
   }
   a:hover {

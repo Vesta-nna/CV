@@ -6304,6 +6304,7 @@ article {
 }
 .logo img {
   height: 100px;
+  flex: 0 1 0;
   transition: all 1s ease-in-out;
 }
 .logo a:hover img {

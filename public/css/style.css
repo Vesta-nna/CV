@@ -6124,19 +6124,81 @@ readers do not read off random characters that represent icons */
 
 /* IMPORT FONT FAMILY MONTSERRAT AND ABRIL FATFACE */
 /* RESET */
-html, body, div, span, applet, object, iframe,
-p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6145,7 +6207,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
@@ -6160,7 +6227,11 @@ body {
   grid-template-areas: "column-1 column-2 main";
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: Roboto;
   text-transform: uppercase;
 }
@@ -6173,16 +6244,23 @@ h2 {
   padding: 0.5em 0 0.25em 0;
 }
 
-h3, h4 {
+h3,
+h4 {
   padding-bottom: 0.25em;
 }
 
-h6 {
-  gap: 0.1em;
-  font-family: "Cutive Mono";
+.stack {
   text-transform: uppercase;
   padding: 1em 0;
+  gap: 0.1em;
+}
+.stack h5 {
+  font-family: "Cutive Mono";
   font-size: 0.9em;
+}
+
+.period {
+  font-family: "Cutive Mono";
 }
 
 a {
